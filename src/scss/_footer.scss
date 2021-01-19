@@ -1,0 +1,29 @@
+@include block(footer) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #151821;
+  padding: 80px 16px;
+
+  div {
+      display: flex;
+      flex-direction: row;
+  }
+
+  @include element(heading) {
+    color: #fafafa;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    @include mobile-l { font-size: 1.75em; }
+    @include tablet   { font-size: 2em; }
+    @include desktop  { font-size: 2.25em; }
+  }
+
+  @include element(description) {
+    margin: 7px 0 32px 0;
+    color: #d0d0d0;
+  }
+}

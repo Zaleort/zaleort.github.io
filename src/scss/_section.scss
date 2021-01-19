@@ -1,0 +1,87 @@
+@include block(section) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: $desktop-l;
+  margin: 60px auto;
+  padding: 0 24px;
+
+  @include tablet {
+      padding-left: 28px;
+      padding-right: 28px;
+  }
+
+  @include desktop {
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-left: 32px;
+      padding-right: 32px;
+  }
+
+  @include element(heading) {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    @include mobile-l { font-size: 1.75em; }
+    @include tablet   { font-size: 2em; }
+    @include desktop  { font-size: 2.25em; }
+
+    ::after {
+      display: block;
+      content: '';
+      width: 32px;
+      height: 4px;
+      background-color: $primary;
+    
+      @include mobile-l { width: 40px; }
+      @include tablet {
+          width: 46px;
+          height: 5px;
+      }
+    
+      @include desktop {
+          width: 51px;
+          height: 7px;
+      }
+    }
+  }
+
+  @include element(sub-heading) {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #454545;
+
+    @include mobile-l { font-size: 1.4rem; }
+    @include tablet   { font-size: 1.5rem; }
+    @include desktop  { font-size: 1.6rem; }
+  }
+
+  @include element(button) {
+    @extend .pt-button;
+    font-weight: 500;
+    margin-top: 7px;
+    border-color: $primary;
+    background-color: $primary;
+    color: #fff;
+
+    &:hover {
+        border-color: $primary600;
+        background-color: $primary600;
+        transition: all 0.15s;
+    }
+  }
+
+  @include modifier(group) {
+    @include desktop {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+
+        & > div {
+            flex: 1;
+        }
+    }
+  }
+}

@@ -1,14 +1,14 @@
 <template>
-  <header class="header">
+  <header class="pt-header">
     <i class="icon-circle animate fade-in" />
-    <div class="header__content">
-      <h1 class="header__name animate faster fade-in-up">
+    <div class="pt-header__content">
+      <h1 class="pt-header__name animate faster fade-in-up">
         Alexandre Henrique
       </h1>
-      <h2 class="header__title animate faster fade-in-up delay-250">
+      <h2 class="pt-header__title animate faster fade-in-up delay-250">
         {{ title }}
       </h2>
-      <p class="header__description">
+      <p class="pt-header__description">
         {{ description }}
       </p>
     </div>
@@ -16,7 +16,7 @@
     <a
       v-for="(action, i) of actions"
       :key="i"
-      class="header__button"
+      class="pt-header__button"
       :href="action.href"
       target="_blank"
       rel="noopener"

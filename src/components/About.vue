@@ -1,14 +1,14 @@
 <template>
-  <section class="section">
-    <div class="section--about__content">
-      <h1 id="about" class="section-heading">
+  <section class="pt-section pt-section--group">
+    <img class="pt-about__avatar" src="../assets/avatar.jpg">
+    <div class="pt-about__content">
+      <h1 id="about" class="pt-section__heading">
         {{ title }}
       </h1>
       <p>
         {{ description }}
       </p>
     </div>
-    <img class="section--about__avatar" src="../assets/avatar.jpg">
   </section>
 </template>
 

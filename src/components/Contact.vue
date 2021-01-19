@@ -1,9 +1,9 @@
 <template>
-  <footer class="footer">
-    <h1 class="footer-heading">
+  <footer class="pt-footer">
+    <h1 class="pt-footer__heading">
       {{ title }}
     </h1>
-    <p class="footer-p">
+    <p class="pt-footer__description">
       {{ description }}
     </p>
     <div>

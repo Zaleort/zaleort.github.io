@@ -1,0 +1,121 @@
+@include block(header) {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  align-items: center;
+  height: 100vh;
+  padding: 16px;
+  background-color: #0B0D13;
+
+  text-align: left;
+  font-family: 'Rubik', sans-serif;
+  color: #fefefe; 
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.12;
+  }
+
+  &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      opacity: 0.08;
+  }
+
+  @include tablet {
+      padding-left: 3em;
+
+      &::before {
+          background-position: left;
+      }
+  }
+
+  @include element(content) {
+    z-index: 1;
+  }
+
+  @include element(name) {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.75em;
+
+    @include mobile-l { font-size: 2em; }
+    @include tablet   { font-size: 2.5em; }
+    @include desktop  { font-size: 3em; }
+  }
+
+  @include element(title) {
+    margin: 0;
+    font-size: 1.25em;
+    font-weight: 300;
+    color: $primary;
+
+    @include mobile-l { font-size: 1.5em; }
+    @include tablet   { font-size: 1.75em; }
+    @include desktop  { font-size: 1.8em; }
+  }
+
+  @include element(description) {
+    font-size: 1.1em;
+    margin: 1em 0;
+    font-weight: 300;
+
+    @include mobile-l { font-size: 1.15em; }
+    @include tablet   { font-size: 1.25em; }
+    @include desktop  { font-size: 1.35em; }
+  }
+
+  @include element(button) {
+    @extend .pt-button;
+    z-index: 1;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-color: $primary;
+
+    &:hover {
+        background-color: $primary;
+        transition: all 90ms ease-out;
+    }
+
+    @include desktop {
+        font-size: 1.25em;
+    }
+  }
+}
+
+.icon-circle {
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border: 3px solid $primary;
+  border-radius: 100%;
+  margin-right: 1.5em;
+  flex-shrink: 0;
+  display: none;
+
+  @include tablet {
+      display: block;
+      border-width: 8px;
+      width: 80px;
+      height: 80px;
+  }
+}

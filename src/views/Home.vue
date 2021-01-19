@@ -2,7 +2,7 @@
   <Header v-bind="header" />
   <about v-bind="about" />
 
-  <section class="section">
+  <section class="pt-section">
     <project
       v-for="(project, name) of projects"
       :key="name"

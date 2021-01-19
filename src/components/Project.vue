@@ -1,15 +1,15 @@
 <template>
-  <div class="section-group animate-on-scroll fade-in-up-slight faster">
+  <div class="pt-section pt-section--group animate-on-scroll fade-in-up-slight faster">
     <div>
-      <h2 class="section-sub-heading">
+      <h2 class="pt-section__sub-heading">
         {{ title }}
       </h2>
       <p>{{ description }}</p>
-      <div class="button-group">
+      <div class="pt-button--group">
         <a
           v-for="(action, i) of actions"
           :key="i"
-          class="section-button"
+          class="pt-section__button"
           :href="action.href"
           target="_blank"
           rel="noopener"
