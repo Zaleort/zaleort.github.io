@@ -1,0 +1,312 @@
+@import 'variables';
+@import 'normalize';
+@import 'skills';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fdfdfd;
+
+    @include desktop { text-align: left; }
+}
+
+p {
+    margin: 12px 0;
+    font-size: 1.15rem;
+    line-height: 1.4;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    align-items: center;
+    height: 100vh;
+    padding: 16px;
+    background-color: #0B0D13;
+
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    color: #fefefe; 
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('../assets/background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.12;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        opacity: 0.08;
+    }
+
+    @include tablet {
+        padding-left: 3em;
+
+        &::before {
+            background-position: left;
+        }
+    }
+}
+
+.header__content {
+    z-index: 1;
+}
+
+.header__name {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.75em;
+
+    @include mobile-l { font-size: 2em; }
+    @include tablet   { font-size: 2.5em; }
+    @include desktop  { font-size: 3em; }
+}
+
+.header__title {
+    margin: 0;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: $primary;
+
+    @include mobile-l { font-size: 1.5em; }
+    @include tablet   { font-size: 1.75em; }
+    @include desktop  { font-size: 1.8em; }
+}
+
+.header__description {
+    font-size: 1.1em;
+    margin: 1em 0;
+    font-weight: 300;
+
+    @include mobile-l { font-size: 1.15em; }
+    @include tablet   { font-size: 1.25em; }
+    @include desktop  { font-size: 1.35em; }
+}
+
+.icon-circle {
+    width: 30px;
+    height: 30px;
+    border: 3px solid $primary;
+    border-radius: 100%;
+    margin-right: 1.5em;
+    flex-shrink: 0;
+    display: none;
+
+    @include tablet {
+        display: block;
+        border-width: 8px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #fafafa;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fafafa;
+    padding: 12px 32px;
+    margin-top: 33px;
+    cursor: pointer;
+    transition: all 90ms ease-in;
+}
+
+.header__button {
+    @extend .button;
+    z-index: 1;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-color: $primary;
+
+    &:hover {
+        background-color: $primary;
+        transition: all 90ms ease-out;
+    }
+
+    @include desktop {
+        font-size: 1.25em;
+    }
+}
+
+.section-button {
+    @extend .button;
+    font-weight: 500;
+    margin-top: 7px;
+    border-color: $primary;
+    background-color: $primary;
+    color: #fff;
+
+    &:hover {
+        border-color: $secondary;
+        background-color: $secondary;
+        transition: all 0.15s;
+    }
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile-l { display: block; }
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: $desktop-l;
+    margin: 60px auto;
+    padding: 0 24px;
+
+    @include tablet {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    @include desktop {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.section-heading, .footer-heading {
+    margin: 0;
+    font-size: 1.4rem;
+
+    @include mobile-l { font-size: 1.75em; }
+    @include tablet   { font-size: 2em; }
+    @include desktop  { font-size: 2.25em; }
+}
+
+.section-heading::after {
+    display: block;
+    content: '';
+    width: 32px;
+    height: 4px;
+    background-color: $primary;
+
+    @include mobile-l { width: 40px; }
+    @include tablet {
+        width: 46px;
+        height: 5px;
+    }
+
+    @include desktop {
+        width: 51px;
+        height: 7px;
+    }
+}
+
+.section-sub-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #454545;
+
+    @include mobile-l { font-size: 1.4rem; }
+    @include tablet   { font-size: 1.5rem; }
+    @include desktop  { font-size: 1.6rem; }
+}
+
+.section-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+
+    @include desktop {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+
+        & > div {
+            flex: 1;
+        }
+    }
+}
+
+.project-img {
+    width: 250px;
+    margin-top: 24px;
+
+    @include mobile-l  { width: 400px; }
+    @include tablet    { width: 550px; }
+    @include desktop   { margin-left: 36px }
+    @include desktop-l { width: 600px }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151821;
+    padding: 80px 16px;
+
+    div {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.footer-heading {
+    color: #fafafa;
+}
+
+.footer-p {
+    margin: 7px 0 32px 0;
+    color: #d0d0d0;
+}
+
+.icon {
+    display: flex;
+    background-color: $primary;
+    margin: 0 5px;
+    color: #fff;
+    width: 42px;
+    height: 42px;
+
+    &:hover { background-color: $secondary; }
+
+    svg {
+        margin: auto;
+        width: 21px;
+        height: 21px;
+    }
+}

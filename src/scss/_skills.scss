@@ -1,0 +1,74 @@
+.js { 
+    background-color: #E5B524; 
+    width: 90%;
+}
+
+.html {
+    background-color: #E44D26;
+    width: 90%;
+}
+
+.css {
+    background-color: #0277BD;
+    width: 90%;
+}
+
+.vue {
+    background-color: #41B883;
+    width: 75%;
+}
+
+.sass {
+    background-color: #BE608B;
+    width: 75%;
+}
+
+.ts {
+    background-color: #007ACC;
+    width: 65%;
+}
+
+.node {
+    background-color: #74B113;
+    width: 50%;
+}
+
+.webpack {
+    background-color: #1C78C0;
+    width: 60%;
+}
+
+.github {
+    background-color: #0D2636;
+    width: 50%;
+}
+
+.firebase {
+    background-color: #FEA510;
+    width: 40%;
+}
+
+.skill-group {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.skill-img {
+    margin-right: 12px;
+    width: 36px;
+
+    @include tablet { width: 50px; }
+}
+
+.skill-level-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+}
+
+.skill-level-bar div {
+    color: #fff;
+    padding: 12px 9px;
+}

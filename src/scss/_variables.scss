@@ -1,0 +1,35 @@
+@import 'mixins/mixins';
+
+// Colors
+// Primary
+$primary: #FF0057;
+$primary50: tint($primary, 90%);
+$primary100: tint($primary, 70%);
+$primary200: tint($primary, 50%);
+$primary300: tint($primary, 30%);
+$primary400: tint($primary, 10%);
+$primary500: shade($primary, 10%);
+$primary600: shade($primary, 20%);
+$primary700: shade($primary, 30%);
+$primary800: shade($primary, 40%);
+$primary900: shade($primary, 50%);
+
+// Secondary
+$secondary: #00FFAA;
+$secondary50: tint($secondary, 90%);
+$secondary100: tint($secondary, 70%);
+$secondary200: tint($secondary, 50%);
+$secondary300: tint($secondary, 30%);
+$secondary400: tint($secondary, 10%);
+$secondary500: shade($secondary, 10%);
+$secondary600: shade($secondary, 20%);
+$secondary700: shade($secondary, 30%);
+$secondary800: shade($secondary, 40%);
+$secondary900: shade($secondary, 50%);
+
+// Media queries
+$mobile: 320px;
+$mobile-l: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-l: 1400px;
