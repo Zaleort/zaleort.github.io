@@ -13,21 +13,20 @@
       </p>
     </div>
 
-    <a
+    <span
       v-for="(action, i) of actions"
       :key="i"
       class="pt-header__button"
-      :href="action.href"
-      target="_blank"
-      rel="noopener"
+      @click="scrollTo('about')"
     >
       {{ action.text }}
-    </a>
+    </span>
   </header>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import ScrollTo from '@/lib/scrollTo';
 
 export default defineComponent({
   name: 'Header',
@@ -46,6 +45,14 @@ export default defineComponent({
       type: Array,
       default: () => {},
     },
+  },
+
+  setup() {
+    const scrollTo = ScrollTo;
+
+    return {
+      scrollTo,
+    };
   },
 });
 </script>
