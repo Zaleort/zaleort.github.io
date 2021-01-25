@@ -1,5 +1,6 @@
 <template>
   <header class="pt-header">
+    <Menu />
     <i class="icon-circle animate fade-in" />
     <div class="pt-header__content">
       <h1 class="pt-header__name animate faster fade-in-up">
@@ -26,10 +27,15 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Menu from '@/components/Menu.vue';
 import ScrollTo from '@/lib/scrollTo';
 
 export default defineComponent({
   name: 'Header',
+  components: {
+    Menu,
+  },
+
   props: {
     title: {
       type: String,

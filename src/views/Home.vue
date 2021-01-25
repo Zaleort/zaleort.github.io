@@ -14,7 +14,9 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, ref } from 'vue';
+import {
+  computed, ComputedRef, defineComponent, inject,
+} from 'vue';
 import langs from '@/lib/Languages';
 import Project from '@/components/Project.vue';
 import Header from '@/components/Header.vue';
@@ -32,7 +34,13 @@ export default defineComponent({
   },
 
   setup() {
-    const lang = ref('es');
+    const lang = inject<ComputedRef>('lang');
+
+    if (typeof lang === 'undefined') {
+      console.warn('Ha ocurrido un error con el idioma');
+      return {};
+    }
+
     const languages = langs as Languages;
 
     const projects = computed(() => languages[lang.value].projects);
