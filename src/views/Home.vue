@@ -2,7 +2,10 @@
   <Header v-bind="header" />
   <about v-bind="about" />
 
-  <section class="pt-section">
+  <section id="projects" class="pt-section">
+    <h1 class="pt-section__heading">
+      {{ projectSection.title }}
+    </h1>
     <project
       v-for="(project, name) of projects"
       :key="name"
@@ -43,6 +46,7 @@ export default defineComponent({
 
     const languages = langs as Languages;
 
+    const projectSection = computed(() => languages[lang.value].project);
     const projects = computed(() => languages[lang.value].projects);
     const header = computed(() => languages[lang.value].header);
     const about = computed(() => languages[lang.value].about);
@@ -55,6 +59,7 @@ export default defineComponent({
       about,
       projects,
       contact,
+      projectSection,
     };
   },
 });

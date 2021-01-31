@@ -1,0 +1,47 @@
+@include block(project) {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  padding: 2em;
+  background-color: $background-color400;
+  border-radius: $border-radius;
+
+  @include desktop-l {
+    flex-direction: row;
+
+    & > div {
+        flex: 1;
+    }
+  }
+
+  @include element(heading) {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    @include mobile-l { font-size: 1.75em; }
+    @include tablet   { font-size: 2em; }
+    @include desktop  { font-size: 2.25em; }
+  }
+
+  @include element(button) {
+    @extend .pt-button;
+    font-weight: 500;
+    margin-top: 7px;
+    border-color: $primary;
+    background-color: $primary;
+    color: #fff;
+
+    &:hover {
+        border-color: $primary600;
+        background-color: $primary600;
+        transition: all 0.15s;
+    }
+
+    @include mobile-l {
+      & + .pt-project__button {
+        margin-left: 12px;
+      }
+    }
+  }
+}

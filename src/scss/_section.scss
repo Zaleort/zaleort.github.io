@@ -1,7 +1,5 @@
 @include block(section) {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   max-width: $desktop-l;
   margin: 60px auto;
@@ -13,8 +11,6 @@
   }
 
   @include desktop {
-      justify-content: flex-start;
-      align-items: flex-start;
       padding-left: 32px;
       padding-right: 32px;
   }
@@ -51,7 +47,7 @@
   @include element(sub-heading) {
     font-size: 1.25rem;
     font-weight: 500;
-    color: #454545;
+    color: $grey50;
 
     @include mobile-l { font-size: 1.4rem; }
     @include tablet   { font-size: 1.5rem; }
@@ -70,6 +66,12 @@
         border-color: $primary600;
         background-color: $primary600;
         transition: all 0.15s;
+    }
+
+    @include mobile-l {
+      & + .pt-section__button {
+        margin-left: 12px;
+      }
     }
   }
 

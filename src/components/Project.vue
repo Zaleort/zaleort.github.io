@@ -1,7 +1,7 @@
 <template>
-  <div class="pt-section pt-section--group animate-on-scroll fade-in-up-slight faster">
+  <div class="pt-project animate-on-scroll fade-in-up-slight faster">
     <div>
-      <h2 class="pt-section__sub-heading">
+      <h2 class="pt-project__sub-heading">
         {{ title }}
       </h2>
       <p>{{ description }}</p>
@@ -9,7 +9,7 @@
         <a
           v-for="(action, i) of actions"
           :key="i"
-          class="pt-section__button"
+          class="pt-project__button"
           :href="action.href"
           target="_blank"
           rel="noopener"
@@ -18,11 +18,13 @@
         </a>
       </div>
     </div>
-    <img
-      class="project-img"
-      :src="img"
-      alt=""
-    >
+    <div class="text-center">
+      <img
+        class="project-img"
+        :src="img"
+        alt=""
+      >
+    </div>
   </div>
 </template>
 

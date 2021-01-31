@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #151821;
+  background-color: $background-color300;
   padding: 80px 16px;
 
   div {
@@ -24,6 +24,6 @@
 
   @include element(description) {
     margin: 7px 0 32px 0;
-    color: #d0d0d0;
+    color: $text-color;
   }
 }

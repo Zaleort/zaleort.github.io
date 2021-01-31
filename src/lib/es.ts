@@ -10,8 +10,12 @@ const es = {
   about: {
     title: 'Sobre mí',
     description: `Soy un entusiasta de la tecnología, autodidacta y perfeccionista, siempre en busca de nuevos retos para desarrollar
-      mis habilidades. Recientemente he obtenido el título de Grado Superior en Desarrollo Front-end y he trabajado
-      6 meses diseñando y maquetando páginas web con WordPress en Almería.`,
+    mis habilidades. He trabajado en el desarrollo del front-end de una aplicación de gestión para corredurías de seguros y en un toolkit de 
+    interfaz con Vue 3 y Composition API. Tengo un Grado Superior en Desarrollo de Aplicaciones Web y un buen nivel de inglés.`,
+  },
+
+  project: {
+    title: 'Proyectos',
   },
 
   projects: {
@@ -42,8 +46,11 @@ const es = {
     rings: {
       title: 'Rings',
       description: `Rings es un videojuego de reflejos para Android, en el que el objetivo es tocar la pantalla antes de que
-        el círculo central se salga de los anillos. Está programado en C# usando Unity.`,
-      actions: [],
+        el círculo central se salga de los anillos. Está programado en C# usando Unity y cuenta con un diseño bastante minimalista.`,
+      actions: [
+        { href: '', text: 'Ver en GitHub', type: 'button' },
+        { href: '', text: 'Ver tráiler', type: 'button' },
+      ],
       img: require('../assets/rings.png'),
     },
   },

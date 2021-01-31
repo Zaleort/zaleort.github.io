@@ -8,6 +8,10 @@ export interface Language {
     img?: string,
   },
 
+  project: {
+    title: string,
+  },
+
   projects?: {
     [id: string]: Project,
   },

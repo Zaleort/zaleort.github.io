@@ -10,8 +10,12 @@ const en = {
   about: {
     title: 'About me',
     description: `Soy un entusiasta de la tecnología, autodidacta y perfeccionista, siempre en busca de nuevos retos para desarrollar
-      mis habilidades. Recientemente he obtenido el título de Grado Superior en Desarrollo Front-end y he trabajado
-      6 meses diseñando y maquetando páginas web con WordPress en Almería.`,
+      mis habilidades. He trabajado en el desarrollo del front-end de una aplicación de gestión para corredurías de seguros y en un toolkit de 
+      interfaz con Vue 3 y Composition API. Tengo el Grado Superior en Desarrollo de Aplicaciones Web y un buen nivel de inglés.`,
+  },
+
+  project: {
+    title: 'Projects',
   },
 
   projects: {

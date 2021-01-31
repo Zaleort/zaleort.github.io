@@ -1,10 +1,10 @@
 <template>
-  <section class="pt-section pt-section--group">
-    <img class="pt-about__avatar" src="../assets/avatar.jpg">
+  <section class="pt-about">
+    <h1 id="about" class="pt-section__heading">
+      {{ title }}
+    </h1>
     <div class="pt-about__content">
-      <h1 id="about" class="pt-section__heading">
-        {{ title }}
-      </h1>
+      <img class="pt-about__avatar" src="../assets/avatar.jpg">
       <p>
         {{ description }}
       </p>

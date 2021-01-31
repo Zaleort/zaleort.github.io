@@ -1,5 +1,5 @@
 <template>
-  <footer class="pt-footer">
+  <footer id="contact" class="pt-footer">
     <h1 class="pt-footer__heading">
       {{ title }}
     </h1>

@@ -6,6 +6,7 @@
 @import 'header';
 @import 'section';
 @import 'about';
+@import 'project';
 @import 'footer';
 @import 'skills';
 @import 'scrollbar';
@@ -19,9 +20,8 @@ body {
     font-size: 1rem;
     font-family: 'Rubik', sans-serif;
     color: $text-color;
-    text-align: center;
     -webkit-font-smoothing: antialiased;
-    background-color: #fdfdfd;
+    background-color: $background-color;
 
     @include desktop { text-align: left; }
 }
@@ -33,13 +33,14 @@ p {
 }
 
 .project-img {
-    width: 250px;
+    max-width: 250px;
     margin-top: 24px;
+    border-radius: 5px;
 
-    @include mobile-l  { width: 400px; }
-    @include tablet    { width: 550px; }
+    @include mobile-l  { max-width: 400px; }
+    @include tablet    { max-width: 550px; }
     @include desktop   { margin-left: 36px }
-    @include desktop-l { width: 600px }
+    @include desktop-l { max-width: 600px }
 }
 
 .icon {
