@@ -1,5 +1,10 @@
 <template>
-  <Header v-bind="header" />
+  <Header
+    v-bind="header"
+    :project="projectSection.title"
+    :about="about.title"
+    :contact="contact.title"
+  />
   <about v-bind="about" />
 
   <section id="projects" class="pt-section">

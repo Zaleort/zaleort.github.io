@@ -2,13 +2,13 @@
   <nav class="pt-menu">
     <div class="pt-menu__options">
       <span class="pt-menu-item" @click="scrollTo('projects')">
-        Proyectos
+        {{ project }}
       </span>
       <span class="pt-menu-item" @click="scrollTo('about')">
-        Sobre mí
+        {{ about }}
       </span>
       <span class="pt-menu-item" @click="scrollTo('contact')">
-        Contacto
+        {{ contact }}
       </span>
     </div>
     <div class="pt-menu__languages">
@@ -48,6 +48,23 @@ import ScrollTo from '@/lib/scrollTo';
 
 export default defineComponent({
   name: 'Menu',
+  props: {
+    project: {
+      type: String,
+      default: null,
+    },
+
+    about: {
+      type: String,
+      default: null,
+    },
+
+    contact: {
+      type: String,
+      default: null,
+    },
+  },
+
   setup() {
     const scrollTo = ScrollTo;
     const lang = inject<ComputedRef>('lang');

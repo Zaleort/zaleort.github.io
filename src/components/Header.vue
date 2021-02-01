@@ -1,6 +1,10 @@
 <template>
   <header class="pt-header">
-    <Menu />
+    <Menu
+      :project="project"
+      :about="about"
+      :contact="contact"
+    />
     <i class="icon-circle animate fade-in" />
     <div class="pt-header__content">
       <h1 class="pt-header__name animate faster fade-in-up">
@@ -50,6 +54,21 @@ export default defineComponent({
     actions: {
       type: Array,
       default: () => {},
+    },
+
+    project: {
+      type: String,
+      default: null,
+    },
+
+    about: {
+      type: String,
+      default: null,
+    },
+
+    contact: {
+      type: String,
+      default: null,
     },
   },
 
