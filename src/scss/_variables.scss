@@ -16,7 +16,7 @@ $grey900: #212121;
 $black: #000000;
 
 // Primary
-$primary: #FF0057;
+$primary: #ff0057;
 $primary50: tint($primary, 90%);
 $primary100: tint($primary, 70%);
 $primary200: tint($primary, 50%);
@@ -29,7 +29,7 @@ $primary800: shade($primary, 40%);
 $primary900: shade($primary, 50%);
 
 // Secondary
-$secondary: #00FFAA;
+$secondary: #00C49A;
 $secondary50: tint($secondary, 90%);
 $secondary100: tint($secondary, 70%);
 $secondary200: tint($secondary, 50%);
@@ -41,27 +41,27 @@ $secondary700: shade($secondary, 30%);
 $secondary800: shade($secondary, 40%);
 $secondary900: shade($secondary, 50%);
 
-$background-color: #0c0e11;
+$background-color: #101216;
 $background-color50: #353d4a;
 $background-color100: #2c343f;
 $background-color200: #242a33;
-$background-color300: #1c2128;
-$background-color400: #14171c;
+$background-color300: #1c232c;
+$background-color400: #191d25;
 
 // Common color
-$text-color: $grey100;
+$text-color: $grey200;
 $text-secondary-color: $grey500;
 $border-color: $grey300;
 
 $low-shadow: 
-  0 3px 4px 0 rgba(0, 0, 0, 0.15),
-  0 6px 12px 0 rgba(0, 0, 0, 0.10) !default;
+  0 3px 4px 0 rgba(0, 0, 0, 0.18),
+  0 6px 12px 0 rgba(0, 0, 0, 0.13) !default;
 $med-shadow: 
-  0 6px 8px 0 rgba(0, 0, 0, 0.18),
-  0 10px 20px 0 rgba(0, 0, 0, 0.13) !default;
+  0 6px 8px 0 rgba(0, 0, 0, 0.21),
+  0 10px 20px 0 rgba(0, 0, 0, 0.16) !default;
 $high-shadow: 
-  0 12px 16px 0 rgba(0, 0, 0, 0.21),
-  0 14px 28px 0 rgba(0, 0, 0, 0.16) !default;
+  0 12px 16px 0 rgba(0, 0, 0, 0.24),
+  0 14px 28px 0 rgba(0, 0, 0, 0.19) !default;
 
 $topbar-height: 50px !default;
 $menu-hamburger-width: 250px;
@@ -74,4 +74,5 @@ $mobile: 320px;
 $mobile-l: 480px;
 $tablet: 768px;
 $desktop: 1024px;
-$desktop-l: 1400px;
+$desktop-l: 1200px;
+$desktop-xl: 1400px;

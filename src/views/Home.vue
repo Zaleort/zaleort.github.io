@@ -18,6 +18,12 @@
     />
   </section>
 
+  <section id="skills" class="pt-section">
+    <h1 class="pt-section__heading">
+      Herramientas y tecnologías
+    </h1>
+  </section>
+
   <contact v-bind="contact" />
 </template>
 

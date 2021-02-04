@@ -17,7 +17,8 @@ html {
 }
 
 body {
-    font-size: 1rem;
+    font-size: 18px;
+    letter-spacing: 0.3px;
     font-family: 'Rubik', sans-serif;
     color: $text-color;
     -webkit-font-smoothing: antialiased;
@@ -30,17 +31,6 @@ p {
     margin: 12px 0;
     font-size: 1.15rem;
     line-height: 1.4;
-}
-
-.project-img {
-    max-width: 250px;
-    margin-top: 24px;
-    border-radius: 5px;
-
-    @include mobile-l  { max-width: 400px; }
-    @include tablet    { max-width: 550px; }
-    @include desktop   { margin-left: 36px }
-    @include desktop-l { max-width: 600px }
 }
 
 .icon {

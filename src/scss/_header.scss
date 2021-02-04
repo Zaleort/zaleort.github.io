@@ -72,13 +72,10 @@
   @include element(button) {
     @extend .pt-button;
     z-index: 1;
-    border-radius: 50px;
     position: absolute;
     bottom: 2.5em;
     left: 50%;
     transform: translateX(-50%);
-
-    border-color: $primary;
 
     &:hover {
         background-color: $primary;

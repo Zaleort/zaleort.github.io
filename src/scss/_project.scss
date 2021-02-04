@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   margin: 1em 0;
-  padding: 2em;
+  padding: 1.5em;
   background-color: $background-color400;
   border-radius: $border-radius;
+  box-shadow: $med-shadow;
 
   @include desktop-l {
     flex-direction: row;
@@ -16,21 +17,20 @@
 
   @include element(heading) {
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.2em;
     font-weight: 500;
 
-    @include mobile-l { font-size: 1.75em; }
-    @include tablet   { font-size: 2em; }
-    @include desktop  { font-size: 2.25em; }
+    @include mobile-l { font-size: 1.3em; }
+    @include tablet   { font-size: 1.4em; }
+    @include desktop  { font-size: 1.5em; }
   }
 
   @include element(button) {
     @extend .pt-button;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 7px;
     border-color: $primary;
     background-color: $primary;
-    color: #fff;
 
     &:hover {
         border-color: $primary600;
@@ -42,6 +42,19 @@
       & + .pt-project__button {
         margin-left: 12px;
       }
+    }
+  }
+
+  @include element(img) {
+    max-width: 250px;
+    margin-top: 24px;
+    border-radius: 5px;
+
+    @include mobile-l  { max-width: 400px; }
+    @include tablet    { max-width: 550px; }
+    @include desktop-l { 
+      margin-left: 1.5em;
+      max-width: 600px 
     }
   }
 }

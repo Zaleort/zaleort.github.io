@@ -1,7 +1,7 @@
 <template>
   <div class="pt-project animate-on-scroll fade-in-up-slight faster">
     <div>
-      <h2 class="pt-project__sub-heading">
+      <h2 class="pt-project__heading">
         {{ title }}
       </h2>
       <p>{{ description }}</p>
@@ -20,7 +20,7 @@
     </div>
     <div class="text-center">
       <img
-        class="project-img"
+        class="pt-project__img"
         :src="img"
         alt=""
       >
