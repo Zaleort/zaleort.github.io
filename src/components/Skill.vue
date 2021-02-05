@@ -1,6 +1,11 @@
 <template>
-  <div>
-
+  <div class="pt-skill__content">
+    <img
+      class="pt-skill__img"
+      :src="img"
+      alt=""
+    >
+    {{ description }}
   </div>
 </template>
 
@@ -9,5 +14,16 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'Skill',
+  props: {
+    description: {
+      type: String,
+      default: null,
+    },
+
+    img: {
+      type: String,
+      default: null,
+    },
+  },
 });
 </script>

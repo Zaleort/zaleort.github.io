@@ -1,74 +1,36 @@
-.js { 
-    background-color: #E5B524; 
-    width: 90%;
-}
-
-.html {
-    background-color: #E44D26;
-    width: 90%;
-}
-
-.css {
-    background-color: #0277BD;
-    width: 90%;
-}
-
-.vue {
-    background-color: #41B883;
-    width: 75%;
-}
-
-.sass {
-    background-color: #BE608B;
-    width: 75%;
-}
-
-.ts {
-    background-color: #007ACC;
-    width: 65%;
-}
-
-.node {
-    background-color: #74B113;
-    width: 50%;
-}
-
-.webpack {
-    background-color: #1C78C0;
-    width: 60%;
-}
-
-.github {
-    background-color: #0D2636;
-    width: 50%;
-}
-
-.firebase {
-    background-color: #FEA510;
-    width: 40%;
-}
-
-.skill-group {
-    margin: 5px 0;
+@include block(skill) {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
+    flex-direction: column;
 
-.skill-img {
-    margin-right: 12px;
-    width: 36px;
+    @include desktop {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-    @include tablet { width: 50px; }
-}
+    @include element(content) {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 30%;
+        flex-grow: 1;
+        align-items: center;
+        margin-top: 1em;
+        padding: 1em;
+        background-color: $background-color400;
+        border-left: 5px solid $primary;
+        border-radius: $border-radius;
+        box-shadow: $low-shadow;
 
-.skill-level-bar {
-    width: 100%;
-    background-color: #e0e0e0;
-}
+        @include desktop {
+            margin-right: 1em;
 
-.skill-level-bar div {
-    color: #fff;
-    padding: 12px 9px;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @include element(img) {
+        height: 25px;
+        margin-right: 12px;
+    }
 }

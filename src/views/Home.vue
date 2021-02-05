@@ -22,6 +22,13 @@
     <h1 class="pt-section__heading">
       Herramientas y tecnologías
     </h1>
+    <div class="pt-skill">
+      <skill
+        v-for="(skill, name) of skills"
+        :key="name"
+        v-bind="skill"
+      />
+    </div>
   </section>
 
   <contact v-bind="contact" />
@@ -32,9 +39,10 @@ import {
   computed, ComputedRef, defineComponent, inject,
 } from 'vue';
 import langs from '@/lib/Languages';
-import Project from '@/components/Project.vue';
 import Header from '@/components/Header.vue';
 import About from '@/components/About.vue';
+import Project from '@/components/Project.vue';
+import Skill from '@/components/Skill.vue';
 import Contact from '@/components/Contact.vue';
 import { Languages } from '@/interfaces/Language';
 
@@ -44,6 +52,7 @@ export default defineComponent({
     Header,
     About,
     Project,
+    Skill,
     Contact,
   },
 
@@ -57,10 +66,11 @@ export default defineComponent({
 
     const languages = langs as Languages;
 
-    const projectSection = computed(() => languages[lang.value].project);
-    const projects = computed(() => languages[lang.value].projects);
     const header = computed(() => languages[lang.value].header);
     const about = computed(() => languages[lang.value].about);
+    const projectSection = computed(() => languages[lang.value].project);
+    const projects = computed(() => languages[lang.value].projects);
+    const skills = computed(() => languages[lang.value].skills);
     const contact = computed(() => languages[lang.value].contact);
 
     return {
@@ -69,8 +79,9 @@ export default defineComponent({
       header,
       about,
       projects,
-      contact,
       projectSection,
+      skills,
+      contact,
     };
   },
 });

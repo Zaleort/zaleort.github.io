@@ -53,7 +53,50 @@ const en = {
   },
 
   skills: {
+    vue: {
+      description: 'Vue 3',
+      img: require('../assets/vue.png'),
+    },
 
+    typescript: {
+      description: 'TypeScript',
+      img: require('../assets/ts.png'),
+    },
+
+    sass: {
+      description: 'Sass',
+      img: require('../assets/sass.png'),
+    },
+
+    git: {
+      description: 'Git',
+      img: require('../assets/git.png'),
+    },
+
+    jest: {
+      description: 'Jest',
+      img: require('../assets/jest.png'),
+    },
+
+    webpack: {
+      description: 'WebPack',
+      img: require('../assets/webpack.png'),
+    },
+
+    nodejs: {
+      description: 'NodeJs',
+      img: require('../assets/nodejs.png'),
+    },
+
+    mongo: {
+      description: 'MongoDB',
+      img: require('../assets/mongodb.png'),
+    },
+
+    php: {
+      description: 'PHP',
+      img: require('../assets/php.png'),
+    },
   },
 
   contact: {
