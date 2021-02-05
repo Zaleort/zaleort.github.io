@@ -1,9 +1,8 @@
 @include block(header) {
-  position: relative;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   overflow: hidden;
-  align-items: center;
+  justify-content: space-between;
   height: 100vh;
   padding: 16px;
   background-color: #0B0D13;
@@ -34,7 +33,9 @@
       }
   }
 
-  @include element(content) {
+  @include element(main) {
+    display: flex;
+    align-items: center;
     z-index: 1;
   }
 
@@ -72,17 +73,14 @@
   @include element(button) {
     @extend .pt-button;
     z-index: 1;
-    position: absolute;
-    bottom: 2.5em;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 1em auto;
 
     &:hover {
         background-color: $primary;
         transition: all 90ms ease-out;
     }
 
-    @include desktop {
+    @include tablet {
         font-size: 1.25em;
     }
   }

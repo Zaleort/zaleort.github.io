@@ -5,17 +5,20 @@
       :about="about"
       :contact="contact"
     />
-    <i class="icon-circle animate fade-in" />
-    <div class="pt-header__content">
-      <h1 class="pt-header__name animate faster fade-in-up">
-        Alexandre Henrique
-      </h1>
-      <h2 class="pt-header__title animate faster fade-in-up delay-250">
-        {{ title }}
-      </h2>
-      <p class="pt-header__description">
-        {{ description }}
-      </p>
+
+    <div class="pt-header__main">
+      <i class="icon-circle animate fade-in" />
+      <div class="pt-header__content">
+        <h1 class="pt-header__name animate faster fade-in-up">
+          Alexandre Henrique
+        </h1>
+        <h2 class="pt-header__title animate faster fade-in-up delay-250">
+          {{ title }}
+        </h2>
+        <p class="pt-header__description">
+          {{ description }}
+        </p>
+      </div>
     </div>
 
     <span
