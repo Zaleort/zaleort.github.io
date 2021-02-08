@@ -1,10 +1,10 @@
 <template>
   <section class="pt-about">
-    <h1 id="about" class="pt-section__heading">
-      {{ title }}
-    </h1>
-    <div class="pt-about__content">
-      <img class="pt-about__avatar" src="../assets/avatar.jpg">
+    <img class="pt-about__avatar" src="../assets/avatar.jpg">
+    <div class="pt-about__text">
+      <h2 class="pt-about__heading">
+        {{ title }}
+      </h2>
       <p>
         {{ description }}
       </p>

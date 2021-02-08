@@ -1,29 +1,45 @@
 @include block(about) {
-  display: flex;
-  flex-direction: column;
+  padding: 24px;
   max-width: $desktop-xl;
   margin: 60px auto;
-  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  @include desktop {
+      padding-left: 32px;
+      padding-right: 32px;
+  }
 
   @include element(avatar) {
     border-radius: 100%;
-    border: 3px solid $primary;
-    width: 250px;
+    border: 7px solid $background-color400;
+    box-shadow: $low-shadow;
+    width: 200px;
+    margin-bottom: 1em;
 
     @include tablet {
-      margin-right: 2em;
+      margin-right: 1em;
+      margin-bottom: 0;
     }
   }
 
-  @include element(content) {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  @include element(text) {
+    background-color: $background-color400;
+    box-shadow: $low-shadow;
+    border-radius: $border-radius;
+    padding: 1em;
+  }
 
-    @include tablet {
-      flex-direction: row;
-    }
+  @include element(heading) {
+    margin: 0;
+    font-weight: 500;
   }
 }
