@@ -1,16 +1,5 @@
 <template>
   <nav class="pt-menu">
-    <div class="pt-menu__options">
-      <span class="pt-menu-item" @click="scrollTo('projects')">
-        {{ project }}
-      </span>
-      <span class="pt-menu-item" @click="scrollTo('about')">
-        {{ about }}
-      </span>
-      <span class="pt-menu-item" @click="scrollTo('contact')">
-        {{ contact }}
-      </span>
-    </div>
     <div class="pt-menu__languages">
       <span
         :class="{
