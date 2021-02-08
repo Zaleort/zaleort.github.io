@@ -16,6 +16,12 @@
     align-items: center;
     justify-content: center;
 
-    @include mobile-l { display: block; }
+    @include mobile-l {
+      flex-direction: row;
+     }
+
+    @include desktop-l {
+      justify-content: flex-start;
+    }
   }
 }

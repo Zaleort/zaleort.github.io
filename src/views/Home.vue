@@ -20,7 +20,7 @@
 
   <section id="skills" class="pt-section">
     <h1 class="pt-section__heading">
-      Herramientas y tecnologías
+      {{ skillSection.title }}
     </h1>
     <div class="pt-skill">
       <skill
@@ -71,6 +71,7 @@ export default defineComponent({
     const projectSection = computed(() => languages[lang.value].project);
     const projects = computed(() => languages[lang.value].projects);
     const skills = computed(() => languages[lang.value].skills);
+    const skillSection = computed(() => languages[lang.value].skill);
     const contact = computed(() => languages[lang.value].contact);
 
     return {
@@ -81,6 +82,7 @@ export default defineComponent({
       projects,
       projectSection,
       skills,
+      skillSection,
       contact,
     };
   },

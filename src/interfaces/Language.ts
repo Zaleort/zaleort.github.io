@@ -20,6 +20,10 @@ export interface Language {
     [id: string]: object,
   },
 
+  skill: {
+    title: string,
+  },
+
   contact?: {
     title?: string,
     descriptions?: string,

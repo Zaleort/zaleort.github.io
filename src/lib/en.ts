@@ -9,9 +9,8 @@ const en = {
 
   about: {
     title: 'About me',
-    description: `Soy un entusiasta de la tecnología, autodidacta y perfeccionista, siempre en busca de nuevos retos para desarrollar
-      mis habilidades. He trabajado en el desarrollo del front-end de una aplicación de gestión para corredurías de seguros y en un toolkit de 
-      interfaz con Vue 3 y Composition API. Tengo el Grado Superior en Desarrollo de Aplicaciones Web y un buen nivel de inglés.`,
+    description: `I'm a technology enthuthiast, autodidact and perfectionist, always searching for new challenges to develop my skills.
+      I've worked in the development of a management web app for assurance brokerages and an interface toolkit with Vue 3 and its Composition API.`,
   },
 
   project: {
@@ -21,9 +20,8 @@ const en = {
   projects: {
     justDoList: {
       title: 'Just Do List',
-      description: `Gestor de listas de tareas, que permite crear tareas diarias o con fecha límite.
-        Cuenta con un sistema de etiquetas con el que puedes organizar las listas por colores. Está hecho
-        con Vue.js y Firebase, junto con TypeScript y Sass.`,
+      description: `Todo-do list manager that allows you to create daily tasks and pending tasks with an specified deadline. It has 
+        a tag system to organize your tasks by color. It's developed with Vue, Firebase, TypeScript and Sass.`,
       actions: [
         { href: 'https://github.com/Zaleort/JustDoList', text: 'Source code', type: 'button' },
         { href: 'https://zaleort-1534268018714.firebaseapp.com/#/', text: 'Demo', type: 'button' },
@@ -33,10 +31,8 @@ const en = {
 
     newsSender: {
       title: 'News Sender',
-      description: `Se trata de un programa hecho en Java, que mediante una versión headless de Chrome y Selenium Webdriver
-        se conecta a BlastingNews, incia sesión con un usuario y envía los datos de la noticia que se quiera
-        publicar en la plataforma. El programa se encarga de elegir una foto de portada y las etiquetas si no
-        se especifican.`,
+      description: `A Java program that logs in BlastingNews and sends the news data that you want to publish. It uses a headless version of Chrome
+        and Selenium WebDriver to scrap the webpage. The program also selects a photo and the tags if they're not specified.`,
       actions: [
         { href: 'https://github.com/Zaleort/NewsSender', text: 'Source code', type: 'button' },
       ],
@@ -45,9 +41,12 @@ const en = {
 
     rings: {
       title: 'Rings',
-      description: `Rings es un videojuego de reflejos para Android, en el que el objetivo es tocar la pantalla antes de que
-        el círculo central se salga de los anillos. Está programado en C# usando Unity.`,
-      actions: [],
+      description: `Rings is an Android relfex game. Tap the rings while the circle is between them to score points and progress. Each level
+        changes the rings behaviour. It's developed in Unity and C#, it has a very minimalistic design.`,
+      actions: [
+        { href: '', text: 'Source code', type: 'button' },
+        { href: '', text: 'Check trailer', type: 'button' },
+      ],
       img: require('../assets/rings.png'),
     },
   },
@@ -97,6 +96,10 @@ const en = {
       description: 'PHP',
       img: require('../assets/php.png'),
     },
+  },
+
+  skill: {
+    title: 'Skills',
   },
 
   contact: {

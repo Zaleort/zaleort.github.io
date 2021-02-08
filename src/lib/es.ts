@@ -102,6 +102,10 @@ const es = {
     },
   },
 
+  skill: {
+    title: 'Habilidades',
+  },
+
   contact: {
     title: 'Contacto',
     description: 'Si te interesa mi trabajo, envíame un correo electrónico o contacta conmigo a través de LinkedIn',
