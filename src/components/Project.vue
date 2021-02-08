@@ -18,12 +18,8 @@
         </a>
       </div>
     </div>
-    <div class="text-center">
-      <img
-        class="pt-project__img"
-        :src="img"
-        alt=""
-      >
+    <div class="pt-project__img">
+      <img :src="img">
     </div>
   </div>
 </template>

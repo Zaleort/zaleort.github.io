@@ -46,15 +46,18 @@
   }
 
   @include element(img) {
-    max-width: 250px;
-    margin-top: 24px;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
 
-    @include mobile-l  { max-width: 400px; }
-    @include tablet    { max-width: 550px; }
-    @include desktop-l { 
+    @include desktop-l {
       margin-left: 1.5em;
-      max-width: 600px 
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 5px;
     }
   }
 }
