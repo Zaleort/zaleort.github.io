@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-skill__content">
+  <div class="pt-skill__content animate-on-scroll fade-in-up-slight faster">
     <img
       class="pt-skill__img"
       :src="img"
