@@ -9,13 +9,13 @@
     <div class="pt-header__main">
       <i class="icon-circle animate fade-in" />
       <div class="pt-header__content">
-        <h1 class="pt-header__name animate faster fade-in-up">
+        <h1 class="pt-header__name animate fast fade-in-up">
           Alexandre Henrique
         </h1>
-        <h2 class="pt-header__title animate faster fade-in-up delay-250">
+        <h2 class="pt-header__title animate fast fade-in-up delay-250">
           {{ title }}
         </h2>
-        <p class="pt-header__description">
+        <p class="pt-header__description animate fast fade-in-up delay-500">
           {{ description }}
         </p>
       </div>
