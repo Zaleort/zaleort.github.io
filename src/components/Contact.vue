@@ -8,7 +8,7 @@
     </p>
     <div>
       <a
-        class="icon"
+        class="pt-footer__icon"
         href="mailto:alehenriquealves@outlook.com"
         aria-label="Enviar correo electrónico"
       >
@@ -23,7 +23,7 @@
         </svg>
       </a>
       <a
-        class="icon"
+        class="pt-footer__icon"
         href="https://www.linkedin.com/in/alexandre-henrique-alves-54005318a/"
         target="_blank"
         rel="noopener"

@@ -32,20 +32,3 @@ p {
     font-size: 1.15rem;
     line-height: 1.6;
 }
-
-.icon {
-    display: flex;
-    background-color: $primary;
-    margin: 0 5px;
-    color: #fff;
-    width: 42px;
-    height: 42px;
-
-    &:hover { background-color: $primary600; }
-
-    svg {
-        margin: auto;
-        width: 21px;
-        height: 21px;
-    }
-}

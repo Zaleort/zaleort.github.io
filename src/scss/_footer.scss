@@ -23,7 +23,26 @@
   }
 
   @include element(description) {
-    margin: 7px 0 32px 0;
+    text-align: center;
+    margin: 7px 0 16px 0;
     color: $text-color;
+  }
+
+  @include element(icon) {
+    display: flex;
+    background-color: $primary;
+    margin: 0 5px;
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+
+    &:hover { background-color: $primary600; }
+
+    svg {
+        margin: auto;
+        width: 21px;
+        height: 21px;
+    }
   }
 }
