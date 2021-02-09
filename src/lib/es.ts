@@ -23,7 +23,7 @@ const es = {
       title: 'Just Do List',
       description: `Gestor de listas de tareas, que permite crear tareas diarias o con fecha límite.
         Cuenta con un sistema de etiquetas con el que puedes organizar las listas por colores. Está hecho
-        con Vue.js y Firebase, junto con TypeScript y Sass.`,
+        con Vue, Firebase, TypeScript y Sass.`,
       actions: [
         { href: 'https://github.com/Zaleort/JustDoList', text: 'Ver en GitHub', type: 'button' },
         { href: 'https://zaleort-1534268018714.firebaseapp.com/#/', text: 'Ver demo', type: 'button' },

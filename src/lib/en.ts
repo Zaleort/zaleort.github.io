@@ -1,7 +1,7 @@
 const en = {
   header: {
     title: 'Front-end Developer',
-    description: 'Autodidact and perfeccionist, with experience in Vue',
+    description: 'Autodidact and perfectionist, with experience in Vue',
     actions: [
       { href: '#projects', text: 'See portfolio' },
     ],
@@ -9,7 +9,7 @@ const en = {
 
   about: {
     title: 'About me',
-    description: `I'm a technology enthuthiast, autodidact and perfectionist, always searching for new challenges to develop my skills.
+    description: `I'm a technology enthusiast, autodidact and perfectionist, always searching for new challenges to develop my skills.
       I've worked in the development of a management web app for assurance brokerages and an interface toolkit with Vue 3 and its Composition API.`,
   },
 
@@ -20,7 +20,7 @@ const en = {
   projects: {
     justDoList: {
       title: 'Just Do List',
-      description: `Todo-do list manager that allows you to create daily tasks and pending tasks with an specified deadline. It has 
+      description: `To-do list manager that allows you to create daily and pending tasks with a specified deadline. It has 
         a tag system to organize your tasks by color. It's developed with Vue, Firebase, TypeScript and Sass.`,
       actions: [
         { href: 'https://github.com/Zaleort/JustDoList', text: 'Source code', type: 'button' },
@@ -32,7 +32,7 @@ const en = {
     newsSender: {
       title: 'News Sender',
       description: `A Java program that logs in BlastingNews and sends the news data that you want to publish. It uses a headless version of Chrome
-        and Selenium WebDriver to scrap the webpage. The program also selects a photo and the tags if they're not specified.`,
+        and Selenium WebDriver to scrap the web page. The program also selects a photo and the tags if they're not specified.`,
       actions: [
         { href: 'https://github.com/Zaleort/NewsSender', text: 'Source code', type: 'button' },
       ],
@@ -41,8 +41,8 @@ const en = {
 
     rings: {
       title: 'Rings',
-      description: `Rings is an Android relfex game. Tap the rings while the circle is between them to score points and progress. Each level
-        changes the rings behaviour. It's developed in Unity and C#, it has a very minimalistic design.`,
+      description: `Rings is an Android reflex game. Tap the rings while the circle is between them to score points and progress. Each level
+        changes the rings behavior. It's developed in Unity and C#, it has a very minimalistic design.`,
       actions: [
         { href: '', text: 'Source code', type: 'button' },
         { href: '', text: 'Check trailer', type: 'button' },
