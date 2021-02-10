@@ -44,8 +44,7 @@ const en = {
       description: `Rings is an Android reflex game. Tap the rings while the circle is between them to score points and progress. Each level
         changes the rings behavior. It's developed in Unity and C#, it has a very minimalistic design.`,
       actions: [
-        { href: '', text: 'Source code', type: 'button' },
-        { href: '', text: 'Check trailer', type: 'button' },
+        { href: 'https://youtu.be/GmZNpKzv6S8', text: 'Check trailer', type: 'button' },
       ],
       img: require('../assets/rings.png'),
     },

@@ -48,8 +48,7 @@ const es = {
       description: `Rings es un videojuego de reflejos para Android, en el que el objetivo es tocar la pantalla antes de que
         el círculo central se salga de los anillos. Está programado en C# usando Unity y cuenta con un diseño bastante minimalista.`,
       actions: [
-        { href: '', text: 'Ver en GitHub', type: 'button' },
-        { href: '', text: 'Ver tráiler', type: 'button' },
+        { href: 'https://youtu.be/GmZNpKzv6S8', text: 'Ver tráiler', type: 'button' },
       ],
       img: require('../assets/rings.png'),
     },
