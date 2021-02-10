@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-about">
+  <section id="about" class="pt-about animate-on-scroll fade-in-up-slight faster">
     <img class="pt-about__avatar" src="../assets/avatar.jpg">
     <div class="pt-about__text">
       <h2 class="pt-about__heading">
