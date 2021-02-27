@@ -18,6 +18,17 @@ const en = {
   },
 
   projects: {
+    hnViewer: {
+      title: 'HN Viewer',
+      description: `Using YCombinator's public API, gets all the posts and comments published on Hacker News
+        to show them on a nicer UI to read, especially on mobile devices. It has some quality of life features such as infinite
+        scroll and the possibility to collapse comment threads.`,
+      actions: [
+        { href: 'https://github.com/Zaleort/hn-viewer', text: 'Source code', type: 'button' },
+      ],
+      img: require('../assets/hnviewer.png'),
+    },
+
     justDoList: {
       title: 'Just Do List',
       description: `To-do list manager that allows you to create daily and pending tasks with a specified deadline. It has 

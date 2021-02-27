@@ -19,6 +19,17 @@ const es = {
   },
 
   projects: {
+    hnViewer: {
+      title: 'HN Viewer',
+      description: `Recoge los posts y comentarios publicados en Hacker News a través de su API pública usando
+        una interfaz más amigable para leer, sobretodo en dispositivos móviles. Además cuenta con algunas mejoras de calidad
+        de vida como scroll infinito y la posibilidad de plegar los comentarios.`,
+      actions: [
+        { href: 'https://github.com/Zaleort/hn-viewer', text: 'Ver en Github', type: 'button' },
+      ],
+      img: require('../assets/hnviewer.png'),
+    },
+
     justDoList: {
       title: 'Just Do List',
       description: `Gestor de listas de tareas, que permite crear tareas diarias o con fecha límite.
